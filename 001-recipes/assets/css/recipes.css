@@ -1,15 +1,20 @@
-.homepage-link a {
-    text-decoration: none;
+body {
+    font-family: "Segoe UI", Verdana, sans-serif;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
 }
 
-.homepage-link img {
-    height: auto;
-    width: 100px;
+h1,
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;   
 }
 
 .recipe-container {
-    text-align: center;
-    font-family: Verdana, Tahoma, sans-serif;
+    height: auto;
+    width: 500px;
+    margin: 15px auto;    
 }
 
 .recipe-title {
@@ -17,15 +22,40 @@
 }
 
 .recipe-image img {
+    display: block;
     height: auto;
-    width: 500px;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #77A1AF;
 }
 
-.recipe-info {
-    display: inline-block; 
+.recipe-description,
+.recipe-time,
+.recipe-ingredients,
+.recipe-steps {
+    display: block;
+    background-color: #E5FFFF; 
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 10px;
     text-align: left;
 }
 
-.recipe-info h3 {
-    text-transform: uppercase;
+.container.homepage-link {
+    text-align: center;
+}
+
+.homepage-link {
+    display: inline;}
+
+.homepage-link img {
+    background-color: #77A1AF;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.homepage-link:hover img {
+    background-color: #E5FFFF;
 }
