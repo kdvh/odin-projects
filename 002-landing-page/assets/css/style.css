@@ -1,5 +1,4 @@
 * {
-
     font-family: Roboto, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -9,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: #f9faf8;
 }
 
 img {
@@ -23,59 +23,48 @@ button {
     border-radius: 10px;   
 }
 
-button,
-.c2a .content
-{
-    background-color: #3882f6;
-}
-
-button,
-.header .logo,
-.hero .main-text,
-.c2a .content {
-    color: #f9faf8;
-}
-
-.header a,
-.hero .secondary-text,
-.footer  {
-    color: #e5e7eb;
-    font-size: 18px;
-}
-
-.header,
-.hero,
-.footer {
+/* background colors */
+.bg-darkblue {
     background-color: #1f2937;
 }
 
-.info .title,
-.quote {
-    font-size: 36px;
+.bg-lightblue {
+    background-color: #3882f6;
 }
 
-.info .title {
-    color: #1f2937;
-    font-weight: bolder;
+.bg-lightgray {
+    background-color: #e5e7eb;
 }
 
-.header .logo {
+/* text colors */
+.text-white1, .text-white1 > * {
+    color: #f9faf8;
+}
+
+.text-white2, .text-white2 > * {
+    color: #e5e7eb;
+}
+
+/* font sizes */
+.text-size18, .text-size18 > *  {
+    font-size: 18px;
+}
+
+.text-size24 {
     font-size: 24px;
 }
 
+.text-size36 {
+    font-size: 36px;
+}
 
+.text-size48 {
+    font-size: 48px;
+}
+
+/* sections */
 .section {
-    padding: 64px 128px;
-}
-
-.header,
-.footer {
-    padding: 32px 128px;
-}
-
-.info,
-.footer {
-    text-align: center;
+    padding: 32px 144px;
 }
 
 .container {
@@ -113,8 +102,14 @@ button,
     gap: 32px;
 }
 
-.hero .main-text {
-    font-size: 48px;
+.hero .right {
+    flex:1;
+    min-width: 250px;
+}
+
+.info,
+.footer {
+    text-align: center;
 }
 
 .info {
@@ -124,23 +119,19 @@ button,
     gap: 32px;
 }
 
-.info .illustrations {
+.info-content {
     display:flex;
     flex-wrap: wrap;
     gap: 32px;
 }
 
-.info .illustration {
+.info-box {
     max-width: 150px;
 }
 
 .info img {
     border: #3882f6 5px solid;
     border-radius: 10px;
-}
-
-.quote {
-    background-color: #e5e7eb;
 }
 
 .quote .text {
@@ -154,7 +145,7 @@ button,
     font-weight: bolder;
 }
 
-.c2a .content {
+.c2a-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,6 +157,3 @@ button,
 .c2a .signup-btn {
     border: #f9faf8 2px solid;
 }
-
-
-
